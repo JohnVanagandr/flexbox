@@ -1,0 +1,100 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Estilos para la propiedad flex */
+.container01 {
+    background-color: #333;
+    height: 20vh;
+
+    /* -------------------
+    display => flex - o - inline-flex
+    ------------------*/
+    display: flex;
+    /* display: inline-flex */
+}
+
+.item01 {
+    background-color: #444;
+    width: 20%;
+    border: medium solid #888;
+    background-color: #444;
+}
+
+/* Estilos para la propedad flex direction */
+.container02 {
+    background-color: #333;
+    height: 20vh;
+    display: flex;
+
+    /* ---------------
+    flex direction => Valor por defecto es row
+    --------------- */
+    /* flex-direction: row;  */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+
+.item02 {
+    background-color: #444;
+    width: 20%;
+    border: medium solid #888;
+    background-color: #444;
+}
+
+/* Estilos para la propedad flex wrap */
+.container03 {
+    background-color: #333;
+    height: 20vh;
+    display: flex;
+
+    /* flex-direction: row;  */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Atajo para no declarar las dos propiedades y solo declarar una propiedad con los dos valores*/
+    /* flex-flow: column nowrap; */
+    /* flex-flow: column wrap; */
+    /* flex-flow: column wrap-reverse; */
+    /* flex-flow: row nowrap; */
+    /* flex-flow: row-reverse nowrap; */
+    /* ETC .. */
+}
+
+.item03 {
+    background-color: #444;
+    width: 20%;
+    border: medium solid #888;
+    background-color: #444;
+}
+
+/* Estilos para la propiedad flex */
+.container04 {
+    background-color: #333;
+    height: 20vh;
+
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+
+    /* Define la alineación de los elementos hijos, respecto del eje principal */
+    /* valor por defecto es flex-start */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+
+.item04 {
+    background-color: #444;
+    width: 20%;
+    border: medium solid #888;
+    background-color: #444;
+}
